@@ -1,13 +1,13 @@
 # Octra Wallet Tools
 
-Kumpulan alat untuk membuat dan mengelola wallet Octra, terdiri dari **Wallet Generator Web UI** dan **Octra Terminal Client**.
+A collection of tools for creating and managing Octra wallets, consisting of the **Wallet Generator Web UI** and the **Octra Terminal Client**.
 
 ---
 
 ## 📦 Wallet Generator Web UI
 
 ### 🚀 Quick Start
-Download dan jalankan Wallet Generator Web UI hanya dengan satu perintah:
+Download and start the Wallet Generator Web UI with a single command:
 
 **Linux / macOS**
 ```bash
@@ -19,10 +19,10 @@ curl -fsSL https://octra.org/wallet-generator.sh | bash
 powershell -c "irm octra.org/wallet-generator.ps1 | iex"
 ```
 
-**Penjelasan:**
-- Mengunduh source code terbaru dan membangun Wallet Generator
-- Menjalankan server dan membuka halaman Web UI di browser
-- Menginstal ke ~/.octra/wallet-generator untuk penggunaan selanjutnya
+**What this command does:**
+- Downloads the latest source code and builds the Wallet Generator
+- Starts the server and opens the Web UI page in your browser
+- Installs to ~/.octra/wallet-generator for future use
 
 **Request testnet tokens:**  
 https://faucet.octra.network
@@ -31,37 +31,37 @@ https://faucet.octra.network
 
 ## 💻 Octra Terminal Client
 
-Terminal wallet bergaya antarmuka TUI ala DOS — dibangun dengan arsitektur asynchronous modern.
+A terminal wallet reminiscent of DOS-era TUI interfaces — built with modern asynchronous architecture.
 
-### Fitur
-- Menampilkan saldo dan riwayat transaksi wallet Octra
-- Mengirim satu atau banyak transaksi
-- Mengekspor private key atau file wallet
+### Features
+- Shows your Octra wallet balance and transaction history
+- Lets you send one or many transactions
+- Exports your private key or full wallet file
 
-### Kompatibilitas
+### Compatibility
 - Linux
 - macOS
-- Windows (beberapa fitur seperti clipboard mungkin tidak berfungsi)
+- Windows (some features like clipboard may not work)
 
-### Kebutuhan
-- Python 3.8 atau lebih tinggi
-- Koneksi internet
-- File wallet (private key)
+### Requirements
+- Python 3.8 or higher
+- Internet connection
+- Your wallet file (private key)
 
-### Cara instalasi dan menjalankan (step-by-step)
+### How to install and run (step-by-step)
 
-Buka terminal dan jalankan perintah berikut satu per satu:
+Open your terminal and run these commands one by one:
 
 ```bash
 git clone https://github.com/octra-labs/octra_pre_client.git
 cd octra_pre_client
 python3 -m venv venv
-source venv/bin/activate  # untuk Windows gunakan: venv\Scripts\activate
+source venv/bin/activate  # for Windows use: venv\Scripts\activate
 pip install -r requirements.txt
 cp wallet.json.example wallet.json
 ```
 
-Edit file `wallet.json`, ganti placeholder dengan data wallet kamu:
+Edit the `wallet.json` file, replacing placeholders with your wallet data:
 
 ```json
 {
@@ -71,7 +71,7 @@ Edit file `wallet.json`, ganti placeholder dengan data wallet kamu:
 }
 ```
 
-Jalankan client:
+Run the client:
 
 ```bash
 ./run.sh       # Linux/macOS
