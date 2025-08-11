@@ -1,0 +1,11 @@
+{
+  "name": "octra-wallet-generator",
+  "version": "1.0.0",
+  "description": "Wallet generator for Octra network",
+  "main": "cli.py",
+  "scripts": {
+    "start": "bash scripts/run.sh"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
